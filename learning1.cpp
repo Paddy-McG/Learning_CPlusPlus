@@ -15,5 +15,9 @@ int main ()
     int minVal = std::min(a,b);
     std::cout << "The lowest value if the two digits is " << minVal << std::endl;
 
+    char ch = 'a';
+    char upperCaseChar = std::toupper(ch);
+    std::cout << "The uppercase of the character a is " << upperCaseChar << std::endl;
+
     return 0;
 }
