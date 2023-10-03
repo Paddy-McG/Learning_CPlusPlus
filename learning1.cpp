@@ -32,5 +32,14 @@ int main ()
     std::cin >> num;
     std::cout << "The number you have entered is " << num << std::endl;
 
+    //To create a line that is continous you use 
+
+    std::cout << "This line is continious";
+
+    //To create a line that jumps to the next line after its end we use
+
+    std::cout << "This line breaks after this sentence" << std::endl;
+    std::cout << "Seeeeeeeee" << std::endl;
+
     return 0;
 }
