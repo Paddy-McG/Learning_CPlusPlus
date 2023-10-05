@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cctype>
+#include <vector>
 
 int main () 
 {
@@ -40,6 +41,18 @@ int main ()
 
     std::cout << "This line breaks after this sentence" << std::endl;
     std::cout << "Seeeeeeeee" << std::endl;
+
+    //To create a vector / array
+
+    std::vector<int> numbers = {1, 2, 3, 4};
+    int firstElement = numbers[0];
+
+    // Does the same thing
+    std::cout << "The first element of the vector is " << firstElement << std::endl;
+    std::cout << "The first element of the vector is " << numbers[0] << std::endl;
+
+    std::vector<double> array = {1.9, 54, 6.78};
+    std::cout << "The first number in this new array is " << array[0] << std::endl;
 
     return 0;
 }
