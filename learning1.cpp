@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cctype>
 #include <vector>
+#include <algorithm>
 
 int main () 
 {
@@ -44,7 +45,7 @@ int main ()
 
     //To create a vector / array
 
-    std::vector<int> numbers = {1, 2, 3, 4};
+    std::vector<int> numbers = {1, 8, 9, 4};
     int firstElement = numbers[0];
 
     // Does the same thing
@@ -53,6 +54,14 @@ int main ()
 
     std::vector<double> array = {1.9, 54, 6.78};
     std::cout << "The first number in this new array is " << array[0] << std::endl;
+
+    //Sorting out the array works for both integers and doubles
+    std::sort(array.begin(), array.end());
+    for(int i = 0; i < array.size(); i ++)
+    {
+        std::cout << array[i] << ", ";
+    }
+    std::cout << std::endl;
 
     return 0;
 }
